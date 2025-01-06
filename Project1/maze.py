@@ -300,7 +300,7 @@ def depth_limited_search(current_state, limit):
 		if current_state.is_goal():
 			final_cost = current_state.cost
 			result_arena = arena.copy()
-
+			
 			while current_state.parent:
 				current_state = current_state.parent
 				mark_star(result_arena, current_state.current_position)
