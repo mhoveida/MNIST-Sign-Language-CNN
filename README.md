@@ -53,30 +53,12 @@ The project followed a standard machine learning pipeline:
 
 ### ReLU vs. Sigmoid Activation
 
-| Feature | ReLU 
-
- | Sigmoid 
-
- |
+| Feature | ReLU | Sigmoid |
 | --- | --- | --- |
-| **Output Range** | 0 to $\infty$ 
-
- | 0 to 1 
-
- |
-| **Convergence** | Faster due to non-saturation for positive inputs 
-
- | Slower 
-
- |
-| **Main Advantage** | Avoids the vanishing gradient problem 
-
- | Ideal for modeling probabilities 
-
- |
+| **Output Range** | 0 to $\infty$ | 0 to 1 |
+| **Convergence** | Faster due to non-saturation for positive inputs | Slower |
+| **Main Advantage** | Avoids the vanishing gradient problem | Ideal for modeling probabilities |
 
 ### One-Hot Encoding
 
 This technique converts categorical labels (like "Apple" or "Orange") into a numerical format. Each category becomes a binary feature, allowing the neural network to clearly distinguish between classes without implying any mathematical order between them.
-
-Would you like to see the specific calculation for how the dimensions change after the convolution and pooling layers?
